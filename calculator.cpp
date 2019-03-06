@@ -28,6 +28,10 @@ auto Calculator::Render() -> void {
     } else {
         temp = std::to_string(static_cast<int>(this->currentNum));
     }
+    if (temp == "."){
+        this->Clear();
+        return;
+    }
     this->numberDisplay->setFont(QFont("Trebuchet MS", this->fontSizes[temp.size()]));
     this->numberDisplay->setText(QString::fromStdString(temp));
 }

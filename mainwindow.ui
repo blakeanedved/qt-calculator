@@ -2,29 +2,56 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>201</width>
+    <width>212</width>
     <height>295</height>
    </rect>
   </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Calculator</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
   </property>
   <property name="dockOptions">
    <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
   </property>
   <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <widget class="QPushButton" name="button7">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>130</y>
-      <width>51</width>
+      <y>131</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(136, 135, 138);</string>
     </property>
     <property name="text">
      <string>7</string>
@@ -33,11 +60,23 @@
    <widget class="QPushButton" name="button8">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>130</y>
-      <width>51</width>
+      <x>53</x>
+      <y>131</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(136, 135, 138);</string>
     </property>
     <property name="text">
      <string>8</string>
@@ -46,11 +85,23 @@
    <widget class="QPushButton" name="button9">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>130</y>
-      <width>51</width>
+      <x>106</x>
+      <y>131</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(136, 135, 138);</string>
     </property>
     <property name="text">
      <string>9</string>
@@ -59,11 +110,23 @@
    <widget class="QPushButton" name="buttonMultiply">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>130</y>
-      <width>51</width>
+      <x>159</x>
+      <y>131</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(220, 103, 45);</string>
     </property>
     <property name="text">
      <string>x</string>
@@ -72,11 +135,23 @@
    <widget class="QPushButton" name="button6">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>170</y>
-      <width>51</width>
+      <x>106</x>
+      <y>172</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(136, 135, 138);</string>
     </property>
     <property name="text">
      <string>6</string>
@@ -86,10 +161,22 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>170</y>
-      <width>51</width>
+      <y>172</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(136, 135, 138);</string>
     </property>
     <property name="text">
      <string>4</string>
@@ -98,11 +185,23 @@
    <widget class="QPushButton" name="buttonMinus">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>170</y>
-      <width>51</width>
+      <x>159</x>
+      <y>172</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(220, 103, 45);</string>
     </property>
     <property name="text">
      <string>-</string>
@@ -111,11 +210,23 @@
    <widget class="QPushButton" name="button5">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>170</y>
-      <width>51</width>
+      <x>53</x>
+      <y>172</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(136, 135, 138);</string>
     </property>
     <property name="text">
      <string>5</string>
@@ -124,11 +235,23 @@
    <widget class="QPushButton" name="button2">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>210</y>
-      <width>51</width>
+      <x>53</x>
+      <y>213</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(136, 135, 138);</string>
     </property>
     <property name="text">
      <string>2</string>
@@ -137,11 +260,23 @@
    <widget class="QPushButton" name="button3">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>210</y>
-      <width>51</width>
+      <x>106</x>
+      <y>213</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(136, 135, 138);</string>
     </property>
     <property name="text">
      <string>3</string>
@@ -151,10 +286,22 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>210</y>
-      <width>51</width>
+      <y>213</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(136, 135, 138);</string>
     </property>
     <property name="text">
      <string>1</string>
@@ -163,14 +310,26 @@
    <widget class="QPushButton" name="buttonPlus">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>210</y>
-      <width>51</width>
+      <x>159</x>
+      <y>213</y>
+      <width>53</width>
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(220, 103, 45);</string>
     </property>
     <property name="text">
      <string>+</string>
@@ -179,11 +338,23 @@
    <widget class="QPushButton" name="buttonDot">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>250</y>
-      <width>51</width>
+      <x>106</x>
+      <y>254</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(136, 135, 138);</string>
     </property>
     <property name="text">
      <string>.</string>
@@ -193,10 +364,22 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>250</y>
-      <width>101</width>
+      <y>254</y>
+      <width>106</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(136, 135, 138);</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -205,11 +388,23 @@
    <widget class="QPushButton" name="buttonEquals">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>250</y>
-      <width>51</width>
+      <x>159</x>
+      <y>254</y>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(220, 103, 45);</string>
     </property>
     <property name="text">
      <string>=</string>
@@ -218,24 +413,48 @@
    <widget class="QPushButton" name="buttonDivide">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>159</x>
       <y>90</y>
-      <width>51</width>
+      <width>53</width>
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(220, 103, 45);</string>
+    </property>
     <property name="text">
-     <string>/</string>
+     <string>÷</string>
     </property>
    </widget>
    <widget class="QPushButton" name="buttonMod">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>106</x>
       <y>90</y>
-      <width>51</width>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(101, 100, 102);</string>
     </property>
     <property name="text">
      <string>%</string>
@@ -246,9 +465,27 @@
      <rect>
       <x>0</x>
       <y>90</y>
-      <width>51</width>
+      <width>53</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(101, 100, 102);</string>
     </property>
     <property name="text">
      <string>AC</string>
@@ -257,14 +494,26 @@
    <widget class="QPushButton" name="buttonPM">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>53</x>
       <y>90</y>
-      <width>51</width>
+      <width>53</width>
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(101, 100, 102);</string>
+    </property>
     <property name="text">
-     <string>+/-</string>
+     <string>±</string>
     </property>
    </widget>
    <widget class="QLabel" name="numberDisplay">
@@ -272,15 +521,16 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>181</width>
+      <width>191</width>
       <height>71</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Trebuchet MS</family>
+      <family>Menlo</family>
       <pointsize>36</pointsize>
       <weight>50</weight>
+      <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>

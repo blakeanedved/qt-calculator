@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "calculator.h"
 #include <memory>
+#include <QGraphicsBlurEffect>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -15,7 +16,6 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
 
 void MainWindow::on_button0_clicked()
 {
