@@ -22,6 +22,10 @@
   <property name="windowTitle">
    <string>Calculator</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo.icns</normaloff>logo.icns</iconset>
+  </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>
   </property>
