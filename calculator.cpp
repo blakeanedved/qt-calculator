@@ -2,7 +2,6 @@
 #include <string>
 #include <cmath>
 #include <QTextFormat>
-#include <iostream>
 
 Calculator::Calculator()
 {
@@ -17,7 +16,6 @@ auto Calculator::setNumberDisplay(QLabel* numberDisplay, QLabel* lastNumberDispl
 
 auto Calculator::Render() -> void {
     std::string temp = this->FormatNumber(this->currentNum, CALC_NOTHING);
-    std::cout << temp << std::endl;
     this->numberDisplay->setFont(QFont("Trebuchet MS", this->fontSizes[temp.size()]));
     this->numberDisplay->setText(QString::fromStdString(temp));
 
@@ -98,13 +96,14 @@ auto Calculator::Clear() -> void {
 
 auto Calculator::ChangeSign() -> void {
     this->currentNum *= -1.0;
+    this->Render();
 }
 
 auto Calculator::FormatNumber(double num, short extraBit) -> std::string {
     std::string temp;
     if (num - static_cast<int>(num) > 0){
         temp = std::to_string(num);
-        int i = 0;
+        unsigned int i = 0;
         while (temp[i] == '0')
             i++;
         temp.erase(0, i);

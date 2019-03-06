@@ -44,7 +44,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -69,7 +69,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -94,7 +94,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -119,14 +119,14 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(220, 103, 45);</string>
+     <string notr="true">background-color:rgb(255, 174, 0);</string>
     </property>
     <property name="text">
      <string>×</string>
@@ -144,7 +144,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -169,7 +169,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -194,14 +194,14 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(220, 103, 45);</string>
+     <string notr="true">background-color:rgb(255, 174, 0);</string>
     </property>
     <property name="text">
      <string>-</string>
@@ -219,7 +219,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -244,7 +244,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -269,7 +269,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -294,7 +294,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -319,7 +319,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -329,7 +329,7 @@
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(220, 103, 45);</string>
+     <string notr="true">background-color:rgb(255, 174, 0);</string>
     </property>
     <property name="text">
      <string>+</string>
@@ -347,7 +347,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -372,7 +372,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -397,14 +397,14 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(220, 103, 45);</string>
+     <string notr="true">background-color:rgb(255, 174, 0);</string>
     </property>
     <property name="text">
      <string>=</string>
@@ -422,14 +422,14 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(220, 103, 45);</string>
+     <string notr="true">background-color:rgb(255, 174, 0);</string>
     </property>
     <property name="text">
      <string>÷</string>
@@ -447,7 +447,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -478,7 +478,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -503,7 +503,7 @@
     <property name="font">
      <font>
       <family>Menlo</family>
-      <pointsize>18</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="cursor">
