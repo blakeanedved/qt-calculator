@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->calc.setNumberDisplay(this->ui->numberDisplay);
+    this->calc.setNumberDisplay(this->ui->numberDisplay, this->ui->lastNumberDisplay);
 }
 
 MainWindow::~MainWindow()

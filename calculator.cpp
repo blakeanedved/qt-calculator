@@ -2,6 +2,7 @@
 #include <string>
 #include <cmath>
 #include <QTextFormat>
+#include <iostream>
 
 Calculator::Calculator()
 {
@@ -9,31 +10,26 @@ Calculator::Calculator()
     this->lastNum = 0.0;
 }
 
-auto Calculator::setNumberDisplay(QLabel* numberDisplay) -> void {
+auto Calculator::setNumberDisplay(QLabel* numberDisplay, QLabel* lastNumberDisplay) -> void {
     this->numberDisplay = numberDisplay;
+    this->lastNumberDisplay = lastNumberDisplay;
 }
 
 auto Calculator::Render() -> void {
-    std::string temp;
-    if (this->currentNum - static_cast<int>(this->currentNum) > 0){
-        temp = std::to_string(this->currentNum);
-        int i = 0;
-        while (temp[i] == '0')
-            i++;
-        temp.erase(0, i);
-        i = 0;
-        while (temp[temp.size() - 1 - i] == '0')
-            i++;
-        temp.erase(temp.size() - i, i);
-    } else {
-        temp = std::to_string(static_cast<int>(this->currentNum));
-    }
-    if (temp == "."){
-        this->Clear();
-        return;
-    }
+    std::string temp = this->FormatNumber(this->currentNum, CALC_NOTHING);
+    std::cout << temp << std::endl;
     this->numberDisplay->setFont(QFont("Trebuchet MS", this->fontSizes[temp.size()]));
     this->numberDisplay->setText(QString::fromStdString(temp));
+
+    if (this->lastNum != 0.0){
+        temp = this->FormatNumber(this->lastNum, this->currentOp);
+    } else if (this->bankedNum != 0.0){
+        temp = this->FormatNumber(this->bankedNum, this->bankedOp);
+    } else {
+        temp = "";
+    }
+
+    this->lastNumberDisplay->setText(QString::fromStdString(temp));
 }
 
 auto Calculator::InsertNum(int num) -> void {
@@ -102,4 +98,32 @@ auto Calculator::Clear() -> void {
 
 auto Calculator::ChangeSign() -> void {
     this->currentNum *= -1.0;
+}
+
+auto Calculator::FormatNumber(double num, short extraBit) -> std::string {
+    std::string temp;
+    if (num - static_cast<int>(num) > 0){
+        temp = std::to_string(num);
+        int i = 0;
+        while (temp[i] == '0')
+            i++;
+        temp.erase(0, i);
+        i = 0;
+        while (temp[temp.size() - 1 - i] == '0')
+            i++;
+        temp.erase(temp.size() - i, i);
+    } else {
+        temp = std::to_string(static_cast<int>(num));
+    }
+    if (temp == "."){
+        this->Clear();
+        return "";
+    }
+
+    if (extraBit > CALC_NOTHING){
+        temp += ' ';
+        temp += this->symbols[extraBit];
+    }
+
+    return temp;
 }

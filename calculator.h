@@ -16,11 +16,13 @@ private:
     short currentOp, bankedOp;
     int decimalDigit = 0;
     QLabel* numberDisplay;
+    QLabel* lastNumberDisplay;
     int fontSizes[18] = {36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 34, 32, 30, 26, 24, 22, 22, 20};
+    std::string symbols[6] = {" ", "+", "-", "×", "÷", "%"};
 
 public:
     Calculator();
-    auto setNumberDisplay(QLabel* numberDisplay) -> void;
+    auto setNumberDisplay(QLabel* numberDisplay, QLabel* lastNumberDisplay) -> void;
     auto Render() -> void;
     auto InsertNum(int num) -> void;
     auto Calculate() -> void;
@@ -29,6 +31,7 @@ public:
     auto StartDecimal() -> void;
     auto Clear() -> void;
     auto ChangeSign() -> void;
+    auto FormatNumber(double num, short extraBit) -> std::string;
 };
 
 #endif // CALCULATOR_H

@@ -129,7 +129,7 @@
      <string notr="true">background-color:rgb(220, 103, 45);</string>
     </property>
     <property name="text">
-     <string>x</string>
+     <string>×</string>
     </property>
    </widget>
    <widget class="QPushButton" name="button6">
@@ -548,6 +548,31 @@
     </property>
     <property name="wordWrap">
      <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lastNumberDisplay">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>191</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(136, 135, 138);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
   </widget>
